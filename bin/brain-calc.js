@@ -23,7 +23,7 @@ export const calculator = (name) => {
         break;
     }
     console.log(`Question: ${number1} ${operator} ${number2}`);
-    let input = readline.question("Your answer: "); //5
+    let input = readline.question("Your answer: ");
     if (input == result) {
       console.log("Correct!");
     } else {
@@ -35,8 +35,6 @@ export const calculator = (name) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-//ещё точно надо вынести одинаковое - ответ на ответ пользователя
-
 const plusminusumn = () => {
   const array = ["+", "-", "*"];
   var rand = Math.floor(Math.random() * array.length);
