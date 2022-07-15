@@ -5,3 +5,7 @@
 ## Hexlet asciinema project 1 part 5
 
 https://asciinema.org/a/tEB2QIuYcABAGZcdOl5sHZfbR
+
+## Hexlet asciinema project 1 part 6
+
+https://asciinema.org/a/jdnFoB4g7wZmflxnvXXBYbPRl
