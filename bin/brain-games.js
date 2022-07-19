@@ -9,8 +9,8 @@ import { findPrimeNumber } from "../bin/brain-prime.js";
 
 export const startGames = (name) => {
   //parityCheck(name);
-  calculator(name);
+  //calculator(name);
   //getGreatestCommonDivisor(name);
-  //progression(name);
+  progression(name);
   //findPrimeNumber(name);
 };

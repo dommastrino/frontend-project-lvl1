@@ -10,6 +10,10 @@ https://asciinema.org/a/tEB2QIuYcABAGZcdOl5sHZfbR
 
 https://asciinema.org/a/jdnFoB4g7wZmflxnvXXBYbPRl
 
-## Hexle asciinema project 1 part 7
+## Hexlet asciinema project 1 part 7
 
 https://asciinema.org/a/FNOW5JXBQM3tCRZWYSNCWU2lx
+
+## Hexlet asciinema project 1 part 8
+
+https://asciinema.org/a/mJesPVFA5cqlRHlaCeVqrfrjf

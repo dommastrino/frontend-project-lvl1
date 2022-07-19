@@ -1,5 +1,5 @@
 import readline from "readline-sync";
-import { getRandomNumber } from "../src/index.js";
+import { getRandomNumber } from "../src/utils.js";
 
 export const parityCheck = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');

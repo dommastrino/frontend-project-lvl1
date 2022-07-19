@@ -1,5 +1,5 @@
 import readline from "readline-sync";
-import { getRandomNumber } from "../src/index.js";
+import { getRandomNumber, getRandomArbitrary } from "../src/utils.js";
 
 export const progression = (name) => {
   console.log("What number is missing in the progression?");

@@ -1,5 +1,5 @@
 import readline from "readline-sync";
-import { getRandomNumber } from "../src/index.js";
+import { getRandomNumber } from "../src/utils.js";
 
 export const getGreatestCommonDivisor = (name) => {
   console.log("Find the greatest common divisor of given numbers.");
