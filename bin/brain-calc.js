@@ -1,8 +1,7 @@
 import readline from "readline-sync";
-import { getRandomNumber } from "../src/utils.js";
+import { getRandomNumber, questionWithAnswer } from "../src/utils.js";
 
-export const calculator = (name) => {
-  console.log("What is the result of the expression?");
+export const calculator = () => {
   let i = 0;
   while (i < 3) {
     i += 1;
@@ -23,18 +22,13 @@ export const calculator = (name) => {
       default:
         break;
     }
-    console.log(`Question: ${number1} ${operator} ${number2}`);
-    let input = readline.question("Your answer: ");
+    let input = questionWithAnswer([number1, operator, number2].join(" "));
     if (input == result) {
       console.log("Correct!");
     } else {
-      console.log(
-        `${input} is wrong answer ;(. Correct answer was '${result}'. Let's try again, ${name}!`
-      );
-      return;
+      return [input, result];
     }
   }
-  console.log(`Congratulations, ${name}!`);
 };
 const plusminusumn = () => {
   const array = ["+", "-", "*"];
