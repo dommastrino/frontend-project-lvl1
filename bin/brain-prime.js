@@ -8,39 +8,26 @@ export const findPrimeNumber = (name) => {
     i += 1;
     let number = getRandomNumber(200);
     console.log(`Question: ${number}`);
+    let flag = true;
     let input = readline.question("Your answer: ");
-    if (number % 1 === 0 && number % number === 0) {
-      if (input.toUpperCase() === "YES") {
-        console.log("Correct!");
-      } else {
-        console.log(
-          `${input} is wrong answer ;(. Correct answer was 'YES'. Let's try again, ${name}!`
-        );
-        return;
+    for (let i = 2; i < number; i += 1) {
+      if (number % i == 0) {
+        flag = false;
+        break;
       }
     }
-    if (number % 1 != 0 && number % number != 0) {
-      if (input.toUpperCase() === "NO") {
-        console.log("Correct!");
-      } else {
-        console.log(
-          `${input} is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`
-        );
-        return;
-      }
+
+    if (
+      (flag && input.toUpperCase() === "YES") ||
+      (!flag && input.toUpperCase() === "NO")
+    ) {
+      console.log("Correct!");
+    } else {
+      console.log(
+        `${input} is wrong answer ;(. Correct answer was 'YES'. Let's try again, ${name}!`
+      );
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);
 };
-// for (let i = 2; i < number; i += 1) {
-//   if (num % 1 == 0) {
-//     if (input.toUpperCase() === "YES") {
-//       console.log("Correct!");
-//     } else {
-//       console.log(
-//         `${input} is wrong answer ;(. Correct answer was '${result}'. Let's try again, ${name}!`
-//       );
-//       return;
-//     }
-//   }
-// }

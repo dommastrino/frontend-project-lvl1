@@ -11,6 +11,6 @@ export const startGames = (name) => {
   //parityCheck(name);
   //calculator(name);
   //getGreatestCommonDivisor(name);
-  progression(name);
-  //findPrimeNumber(name);
+  //progression(name);
+  findPrimeNumber(name);
 };

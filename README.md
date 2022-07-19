@@ -17,3 +17,7 @@ https://asciinema.org/a/FNOW5JXBQM3tCRZWYSNCWU2lx
 ## Hexlet asciinema project 1 part 8
 
 https://asciinema.org/a/mJesPVFA5cqlRHlaCeVqrfrjf
+
+## Hexlet asciinema project 1 part 9
+
+https://asciinema.org/a/QCDeSI1e3KaoMY4pGuJEZi7Uf
