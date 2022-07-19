@@ -1,4 +1,5 @@
 import readline from "readline-sync";
+import { getRandomNumber } from "../src/index.js";
 
 export const calculator = (name) => {
   console.log("What is the result of the expression?");
@@ -7,8 +8,8 @@ export const calculator = (name) => {
     i += 1;
     let operator = plusminusumn();
     let result = 0;
-    let number1 = getRandomNumber();
-    let number2 = getRandomNumber();
+    const number1 = getRandomNumber(200);
+    let number2 = getRandomNumber(200);
     switch (operator) {
       case "+":
         result = number1 + number2;
@@ -39,8 +40,4 @@ const plusminusumn = () => {
   const array = ["+", "-", "*"];
   var rand = Math.floor(Math.random() * array.length);
   return array[rand];
-};
-const getRandomNumber = () => {
-  const run = Math.floor(Math.random() * 200);
-  return run;
 };
