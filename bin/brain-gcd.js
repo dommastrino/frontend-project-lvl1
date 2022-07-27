@@ -1,4 +1,4 @@
-import { getGreatestCommonDivisor } from "../games/gcd.js";
-import { initGame } from "../src/index.js";
+#!/usr/bin/env node
+import { launch } from "../src/games/gcd.js";
 
-initGame(getGreatestCommonDivisor);
+launch();

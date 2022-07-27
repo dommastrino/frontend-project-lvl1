@@ -2,9 +2,10 @@ import {
   getRandomNumber,
   getRandomArbitrary,
   getUserAnswer,
-} from "../src/index.js";
+} from "../utils.js";
+import { initGame } from "../index.js";
 
-export const progression = () => {
+export const startProgressionGame = () => {
   let lengthArray = getRandomArbitrary(5, 10);
   let counter = getRandomNumber(5);
   let start = getRandomNumber(20);
@@ -22,4 +23,7 @@ const generateArr = (counter, lengthArray, start) => {
     array.push(array[i - 1] + counter);
   }
   return array;
+};
+export const launch = () => {
+  initGame(startProgressionGame, "What number is missing in the progression?");
 };

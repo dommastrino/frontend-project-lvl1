@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/dommastrino/frontend-project-lvl1#readme",
   "bin": {
+    "utils": "src/utils.js",
     "index": "src/index.js",
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",

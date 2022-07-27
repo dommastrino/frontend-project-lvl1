@@ -1,4 +1,4 @@
-import { findPrimeNumber } from "../games/prime.js";
-import { initGame } from "../src/index.js";
+#!/usr/bin/env node
+import { launch } from "../src/games/prime.js";
 
-initGame(findPrimeNumber);
+launch();

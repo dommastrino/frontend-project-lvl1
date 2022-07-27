@@ -1,19 +1,7 @@
-import readline from "readline-sync";
 import askName from "../src/cli.js";
 
-export const getRandomNumber = (number) => {
-  const run = Math.floor(Math.random() * number);
-  return run;
-};
-export const getRandomArbitrary = (min, max) => {
-  return Math.floor(Math.random() * (max - min) + min);
-};
-export const getUserAnswer = (question) => {
-  console.log(`Question: ${question}`);
-  return readline.question("Your answer: ");
-};
-
-export const initGame = (startGame) => {
+export const initGame = (startGame, description) => {
+  console.log(description);
   let name = askName();
   let i = 0;
   while (i < 3) {

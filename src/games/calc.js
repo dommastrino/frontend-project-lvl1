@@ -1,6 +1,7 @@
-import { getRandomNumber, getUserAnswer } from "../src/index.js";
+import { getRandomNumber, getUserAnswer } from "../utils.js";
+import { initGame } from "../index.js";
 
-export const calculator = () => {
+export const startCalculator = () => {
   let operator = plusminusumn();
   const number1 = getRandomNumber(200);
   let number2 = getRandomNumber(200);
@@ -25,4 +26,7 @@ const getResult = (number1, operator, number2) => {
     default:
       return;
   }
+};
+export const launch = () => {
+  initGame(startCalculator, "What is the result of the expression?");
 };
