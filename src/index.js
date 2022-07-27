@@ -1,14 +1,14 @@
-import askName from "../src/cli.js";
+import askName from './cli.js';
 
-export const initGame = (startGame, description) => {
-  let name = askName();
+const initGame = (startGame, description) => {
+  const name = askName();
   console.log(description);
   let i = 0;
   while (i < 3) {
     i += 1;
-    let result = startGame();
-    if (result.answer == result.input.toLowerCase()) {
-      console.log("Correct!");
+    const result = startGame();
+    if (result.answer === result.input.toLowerCase()) {
+      console.log('Correct!');
     } else {
       console.log(
         `'${result.input}' is wrong answer ;(. Correct answer was '${result.answer}'.`
@@ -19,3 +19,5 @@ export const initGame = (startGame, description) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
+
+export default initGame;

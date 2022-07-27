@@ -2,8 +2,8 @@ import {
   getRandomNumber,
   getRandomArbitrary,
   getUserAnswer,
-} from "../utils.js";
-import { initGame } from "../index.js";
+} from '../utils.js';
+import { initGame } from '../index.js';
 
 export const startProgressionGame = () => {
   let lengthArray = getRandomArbitrary(5, 10);
@@ -12,8 +12,8 @@ export const startProgressionGame = () => {
   let array = generateArr(counter, lengthArray, start);
   let delIndex = getRandomNumber(lengthArray);
   let answer = array[delIndex];
-  array[delIndex] = "..";
-  let input = getUserAnswer(array.join(" "));
+  array[delIndex] = '..';
+  let input = getUserAnswer(array.join(' '));
   return { answer, input };
 };
 const generateArr = (counter, lengthArray, start) => {
@@ -25,5 +25,5 @@ const generateArr = (counter, lengthArray, start) => {
   return array;
 };
 export const launch = () => {
-  initGame(startProgressionGame, "What number is missing in the progression?");
+  initGame(startProgressionGame, 'What number is missing in the progression?');
 };

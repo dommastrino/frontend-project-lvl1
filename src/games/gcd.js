@@ -1,17 +1,19 @@
-import { getRandomNumber, getUserAnswer } from "../utils.js";
-import { initGame } from "../index.js";
+import { getRandomNumber, getUserAnswer } from '../utils.js';
+import { initGame } from '../index.js';
+
+const NOD = (num1, num2) => {
+  while (num2 !== 0) num2 = num1 % (num1 = num2);
+  return num1;
+};
 
 export const startGCD = () => {
-  let number1 = getRandomNumber(200);
-  let number2 = getRandomNumber(200);
-  let answer = NOD(number1, number2);
-  let input = getUserAnswer([number1, number2].join(" "));
+  const number1 = getRandomNumber(200);
+  const number2 = getRandomNumber(200);
+  const answer = NOD(number1, number2);
+  const input = getUserAnswer([number1, number2].join(' '));
   return { answer, input };
 };
-const NOD = (x, y) => {
-  while (y !== 0) y = x % (x = y);
-  return x;
-};
+
 export const launch = () => {
-  initGame(startGCD, "Find the greatest common divisor of given numbers.");
+  initGame(startGCD, 'Find the greatest common divisor of given numbers.');
 };
