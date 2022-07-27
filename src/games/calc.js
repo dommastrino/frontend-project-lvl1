@@ -1,5 +1,5 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
-import { initGame } from '../index.js';
+import { default as initGame } from '../index.js';
 
 const plusminusumn = () => {
   const array = ['+', '-', '*'];

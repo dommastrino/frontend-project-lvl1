@@ -1,5 +1,5 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
-import { initGame } from '../index.js';
+import { default as initGame } from '../index.js';
 
 const NOD = (num1, num2) => {
   while (num2 !== 0) num2 = num1 % (num1 = num2);
