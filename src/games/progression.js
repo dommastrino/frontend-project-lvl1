@@ -13,7 +13,7 @@ export const startProgressionGame = () => {
   let delIndex = getRandomNumber(lengthArray);
   let answer = array[delIndex];
   array[delIndex] = "..";
-  let input = getUserAnswer(array.toString());
+  let input = getUserAnswer(array.join(" "));
   return { answer, input };
 };
 const generateArr = (counter, lengthArray, start) => {
