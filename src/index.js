@@ -1,4 +1,4 @@
-/*eslint eqeqeq: ["error", "smart"]*/
+/* eslint eqeqeq: ["error", "smart"] */
 import askName from './cli.js';
 
 const initGame = (startGame, description) => {

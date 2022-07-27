@@ -1,7 +1,7 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
 import initGame from '../index.js';
 
-const isPrimeNumber = number => {
+const isPrimeNumber = (number) => {
   if (number === 0) {
     return false;
   }
