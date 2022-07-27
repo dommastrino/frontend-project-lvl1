@@ -7,7 +7,7 @@ const initGame = (startGame, description) => {
   while (i < 3) {
     i += 1;
     const result = startGame();
-    if (result.answer === result.input.toLowerCase()) {
+    if (result.answer == result.input.toLowerCase()) {
       console.log('Correct!');
     } else {
       console.log(
