@@ -1,14 +1,10 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
-import { default as initGame } from '../index.js';
+import initGame from '../index.js';
 
-const NOD = (x, y) => {
-  while (y !== 0) y = x % (x = y);
-  return x;
+const NOD = (num1, num2) => {
+  while (num2 !== 0) num2 = num1 % (num1 = num2);
+  return num1;
 };
-// const NOD = (num1, num2) => {
-//   while (num2 !== 0) num2 = num1 % (num1 = num2);
-//   return num1;
-// };
 
 export const startGCD = () => {
   const number1 = getRandomNumber(200);

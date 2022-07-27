@@ -3,7 +3,7 @@ import {
   getRandomArbitrary,
   getUserAnswer,
 } from '../utils.js';
-import { default as initGame } from '../index.js';
+import initGame from '../index.js';
 
 const generateArr = (counter, lengthArray, start) => {
   const array = [];

@@ -1,5 +1,5 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
-import { default as initGame } from '../index.js';
+import initGame from '../index.js';
 
 const isPrimeNumber = (number) => {
   if (number === 0) {

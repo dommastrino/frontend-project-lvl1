@@ -1,9 +1,9 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
-import { default as initGame } from '../index.js';
+import initGame from '../index.js';
 
 const plusminusumn = () => {
   const array = ['+', '-', '*'];
-  let rand = Math.floor(Math.random() * array.length);
+  const rand = Math.floor(Math.random() * array.length);
   return array[rand];
 };
 
@@ -15,8 +15,9 @@ const getResult = (number1, operator, number2) => {
       return number1 - number2;
     case '*':
       return number1 * number2;
+    default:
+      break;
   }
-  return;
 };
 
 export const startCalculator = () => {
