@@ -1,8 +1,8 @@
 import askName from "../src/cli.js";
 
 export const initGame = (startGame, description) => {
-  console.log(description);
   let name = askName();
+  console.log(description);
   let i = 0;
   while (i < 3) {
     i += 1;
