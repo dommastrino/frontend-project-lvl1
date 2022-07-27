@@ -1,7 +1,7 @@
 import { getRandomNumber, getUserAnswer } from '../utils.js';
 import initGame from '../index.js';
 
-const isPrimeNumber = (number) => {
+const isPrimeNumber = number => {
   if (number === 0) {
     return false;
   }
@@ -22,8 +22,5 @@ export const findPrimeNumber = () => {
 };
 
 export const launch = () => {
-  initGame(
-    findPrimeNumber,
-    'Answer "yes" if given number is prime. Otherwise answer "no".'
-  );
+  initGame(findPrimeNumber, 'Answer "yes" if given number is prime. Otherwise answer "no".');
 };

@@ -1,4 +1,3 @@
-/* eslint no-console: "error" */
 import readline from 'readline-sync';
 
 const askName = () => {

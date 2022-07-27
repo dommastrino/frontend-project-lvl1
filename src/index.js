@@ -1,3 +1,4 @@
+/*eslint eqeqeq: ["error", "smart"]*/
 import askName from './cli.js';
 
 const initGame = (startGame, description) => {
@@ -10,9 +11,7 @@ const initGame = (startGame, description) => {
     if (result.answer == result.input.toLowerCase()) {
       console.log('Correct!');
     } else {
-      console.log(
-        `'${result.input}' is wrong answer ;(. Correct answer was '${result.answer}'.`
-      );
+      console.log(`'${result.input}' is wrong answer ;(. Correct answer was '${result.answer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }

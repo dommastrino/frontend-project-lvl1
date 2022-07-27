@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { getRandomNumber, getUserAnswer } from '../utils.js';
 import initGame from '../index.js';
 

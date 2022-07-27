@@ -8,16 +8,21 @@ const plusminusumn = () => {
 };
 
 const getResult = (number1, operator, number2) => {
+  let result = 0;
   switch (operator) {
     case '+':
-      return number1 + number2;
+      result = number1 + number2;
+      break;
     case '-':
-      return number1 - number2;
+      result = number1 - number2;
+      break;
     case '*':
-      return number1 * number2;
+      result = number1 * number2;
+      break;
     default:
       break;
   }
+  return result;
 };
 
 export const startCalculator = () => {
