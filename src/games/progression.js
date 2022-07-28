@@ -1,8 +1,4 @@
-import {
-  getRandomNumber,
-  getRandomArbitrary,
-  getUserAnswer,
-} from '../utils.js';
+import { getRandomNumber, getRandomArbitrary, getUserAnswer } from '../utils.js';
 import initGame from '../index.js';
 
 const generateArr = (counter, lengthArray, start) => {
@@ -20,9 +16,9 @@ export const startProgressionGame = () => {
   const start = getRandomNumber(20);
   const array = generateArr(counter, lengthArray, start);
   const delIndex = getRandomNumber(lengthArray);
-  const answer = array[delIndex];
+  const answer = array[delIndex].toString();
   array[delIndex] = '..';
-  const input = getUserAnswer(array.join(' '));
+  const input = getUserAnswer(array.join(' ')).toString();
   return { answer, input };
 };
 

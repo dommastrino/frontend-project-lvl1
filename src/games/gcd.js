@@ -10,8 +10,8 @@ const NOD = (num1, num2) => {
 export const startGCD = () => {
   const number1 = getRandomNumber(200);
   const number2 = getRandomNumber(200);
-  const answer = NOD(number1, number2);
-  const input = getUserAnswer([number1, number2].join(' '));
+  const answer = NOD(number1, number2).toString();
+  const input = getUserAnswer([number1, number2].join(' ')).toString();
   return { answer, input };
 };
 
