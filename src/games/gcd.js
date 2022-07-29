@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 import initGame from '../index.js';
 
 const NOD = (num1, num2) => {

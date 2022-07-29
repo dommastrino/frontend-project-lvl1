@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 import initGame from '../index.js';
 
 const getRandomOperator = () => {

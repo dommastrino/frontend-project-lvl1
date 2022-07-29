@@ -8,7 +8,7 @@ const initGame = (startGame, description) => {
   for (let i = 0; i < 3; i += 1) {
     const gameResult = startGame();
     console.log(`Question: ${gameResult.strForInput}`);
-    let input = readline.question('Your answer: ');
+    const input = readline.question('Your answer: ');
     if (gameResult.answer === input.toLowerCase()) {
       console.log('Correct!');
     } else {
