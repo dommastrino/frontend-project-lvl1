@@ -1,10 +1,10 @@
-import { getRandomNumber, getUserAnswer } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 import initGame from '../index.js';
 
-const plusminusumn = () => {
-  const array = ['+', '-', '*'];
-  const rand = Math.floor(Math.random() * array.length);
-  return array[rand];
+const getRandomOperator = () => {
+  const operatorArray = ['+', '-', '*'];
+  const index = Math.floor(Math.random() * operatorArray.length);
+  return operatorArray[index];
 };
 
 const getResult = (number1, operator, number2) => {
@@ -26,12 +26,12 @@ const getResult = (number1, operator, number2) => {
 };
 
 export const startCalculator = () => {
-  const operator = plusminusumn();
-  const number1 = getRandomNumber(200);
-  const number2 = getRandomNumber(200);
+  const operator = getRandomOperator();
+  const number1 = getRandomNumber(1, 200);
+  const number2 = getRandomNumber(1, 200);
   const answer = getResult(number1, operator, number2).toString();
-  const input = getUserAnswer([number1, operator, number2].join(' '));
-  return { answer, input };
+  const strForInput = [number1, operator, number2].join(' ');
+  return { answer, strForInput };
 };
 
 export const launch = () => {

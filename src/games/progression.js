@@ -1,25 +1,25 @@
-import { getRandomNumber, getRandomArbitrary, getUserAnswer } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 import initGame from '../index.js';
 
-const generateArr = (counter, lengthArray, start) => {
+const getProgressionArray = (counter, arrLength, startElem) => {
   const array = [];
-  array.push(start);
-  for (let i = 1; i <= lengthArray; i += 1) {
+  array.push(startElem);
+  for (let i = 1; i <= arrLength; i += 1) {
     array.push(array[i - 1] + counter);
   }
   return array;
 };
 
 export const startProgressionGame = () => {
-  const lengthArray = getRandomArbitrary(5, 10);
-  const counter = getRandomNumber(5);
-  const start = getRandomNumber(20);
-  const array = generateArr(counter, lengthArray, start);
-  const delIndex = getRandomNumber(lengthArray);
-  const answer = array[delIndex].toString();
-  array[delIndex] = '..';
-  const input = getUserAnswer(array.join(' ')).toString();
-  return { answer, input };
+  const arrLength = getRandomNumber(5, 10);
+  const counter = getRandomNumber(1, 5);
+  const startElem = getRandomNumber(1, 20);
+  const array = getProgressionArray(counter, arrLength, startElem);
+  const delElemIndex = getRandomNumber(1, arrLength);
+  const answer = array[delElemIndex].toString();
+  array[delElemIndex] = '..';
+  const strForInput = array.join(' ').toString();
+  return { answer, strForInput };
 };
 
 export const launch = () => {

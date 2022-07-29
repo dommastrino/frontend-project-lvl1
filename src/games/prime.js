@@ -1,4 +1,4 @@
-import { getRandomNumber, getUserAnswer } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 import initGame from '../index.js';
 
 const isPrimeNumber = (number) => {
@@ -14,11 +14,10 @@ const isPrimeNumber = (number) => {
 };
 
 export const findPrimeNumber = () => {
-  const number = getRandomNumber(200);
-  const input = getUserAnswer(number);
-  const flag = isPrimeNumber(number);
-  const answer = flag ? 'yes' : 'no';
-  return { input, answer };
+  const number = getRandomNumber(1, 200);
+  const strForInput = number;
+  const answer = isPrimeNumber(number) ? 'yes' : 'no';
+  return { strForInput, answer };
 };
 
 export const launch = () => {
